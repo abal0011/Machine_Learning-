@@ -21,12 +21,11 @@ h = X*theta;
 stderr = h-y;
 theta = theta - (alpha/m)*(stderr' * X)';
 
-
     % ============================================================
 
     % Save the cost J in every iteration    
     J_history(iter) = computeCost(X, y, theta);
 
 end
-disp(min(J_history));
+
 end
