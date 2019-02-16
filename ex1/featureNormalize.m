@@ -26,10 +26,10 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
-
 mu = mean(X);
 sigma = std(X);
 I = 1:size(X,2);
+
 
 for i = I,
 difference = X(:,i) - mu(i);
